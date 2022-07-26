@@ -1,0 +1,96 @@
+:root {
+	--primary-color: #428bca;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+	border: none;
+	padding: 8px 12px;
+	text-transform: uppercase;
+	margin: 8px 0;
+}
+
+.btn--primary {
+	background-color: var(--primary-color);
+	color: white;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0px auto;
+}
+
+.books-section {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 32px;
+	justify-content: center;
+	margin-top: 16px;
+}
+
+.book {
+	width: 240px;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+
+	padding: 4px;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0px 8px 16px #dfdfdf;
+
+	transition: all 0.3s ease-in-out;
+}
+
+.book:hover {
+	transform: scale(1.05);
+}
+
+.book__thumbnail {
+	width: 80%;
+	max-height: 240px;
+	object-fit: contain;
+}
+
+.book__title {
+	font-size: 1.4rem;
+	text-align: center;
+	color: var(--primary-color);
+}
+
+.book__availability {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	padding: 4px;
+	border-radius: 4px;
+}
+
+.book__availability--available {
+	background-color: #67b866;
+	color: white;
+}
+
+.book__availability--soldOut {
+	background-color: #b86666;
+	color: white;
+}
+
+.book__price {
+	color: #67b866;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
