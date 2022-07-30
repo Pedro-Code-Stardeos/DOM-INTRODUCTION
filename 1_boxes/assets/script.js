@@ -23,7 +23,7 @@ addButton.addEventListener('click', () => {
 	box.classList.add('box');
 
 	// Crear el contenedor de los botones
-	const buttonsContainer = document.createElement('box__buttons');
+	const buttonsContainer = document.createElement('div');
 	buttonsContainer.classList.add('box__buttons');
 
 	// Crear los botones

@@ -7,6 +7,7 @@ for (let i = 0; i < books.length; i++) {
 	const book = books[i];
 	// console.log(book);
 
+	// Seleccionar los elementos que nos interesan de cada libro
 	const title = book.querySelector('.book__title');
 	const price = book.querySelector('.book__price');
 	const availability = book.querySelector('.book__availability');
@@ -15,6 +16,7 @@ for (let i = 0; i < books.length; i++) {
 	// console.log(availability.textContent);
 	// console.log(price.textContent);
 
+	// Agregar los datos del libro al array / lista de libros
 	data.push({
 		title: title.textContent,
 		price: price.textContent,
